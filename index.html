@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Distance Converter</title>
+</head>
+<body style="background: linear-gradient(to bottom, #6699ff 0%, #cc00ff 100%);">
+    <blockquote class="z-depth-5"><h3>Distance Converter</h3></blockquote>
+    <div class="row">
+        <div class="col s4">
+            <div class="card z-depth-5">
+                <div class="card-content">
+                    <span class="card-title">Feet Converter</span>
+                    <p>
+                        <input type="number" id="inputFeet" placeholder="Feet" oninput="feetConverter(this.value)" onchange="feetConverter(this.value)">
+                    </p>
+                    <p>Meters: <span id="outputMeters"></span></p>
+                    <p>Inches: <span id="outputInches"></span></p>
+                    <p>Centimeters: <span id="outputCentimeters"></span></p>
+                    <p>Kilometers: <span id="outputKilometers"></span></p>
+                    <p>Miles: <span id="outputMiles"></span></p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col s4">
+                <div class="card z-depth-5">
+                    <div class="card-content">
+                        <span class="card-title">Meter Converter</span>
+                        <p>
+                            <input type="number" id="inputMeter" placeholder="Meter" oninput="meterConverter(this.value)" onchange="meterConverter(this.value)">
+                        </p>
+                        <p>Feet: <span id="mtof"></span></p>
+                        <p>Inches: <span id="mtoi"></span></p>
+                        <p>Centimeters: <span id="mtoc"></span></p>
+                        <p>Kilometers: <span id="mtok"></span></p>
+                        <p>Miles: <span id="mtom"></span></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s4">
+                <div class="card z-depth-5">
+                    <div class="card-content">
+                        <span class="card-title">Inches Converter</span>
+                        <p>
+                            <input type="number" id="inputMeter" placeholder="Inches" oninput="incheConverter(this.value)" onchange="incheConverter(this.value)">
+                        </p>
+                        <p>Feet: <span id="itof"></span></p>
+                        <p>Meters: <span id="itom"></span></p>
+                        <p>Centimeters: <span id="itoc"></span></p>
+                        <p>Kilometers: <span id="itok"></span></p>
+                        <p>Miles: <span id="itomi"></span></p>
+                        </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="col s4">
+            <div class="card z-depth-5">
+                <div class="card-content">
+                    <span class="card-title">Centimeters Converter</span>
+                    <p>
+                        <input type="number" id="inputMeter" placeholder="Centimeters" oninput="centimeterConverter(this.value)" onchange="centimeterConverter(this.value)">
+                    </p>
+                        <p>Feet: <span id="ctof"></span></p>
+                        <p>Meters: <span id="ctom"></span></p>
+                        <p>Inches: <span id="ctoi"></span></p>
+                        <p>Kilometers: <span id="ctok"></span></p>
+                        <p>Miles: <span id="ctomi"></span></p>
+                        </div>
+                        </div>
+            </div>
+            <div class="col s4">
+                <div class="card z-depth-5">
+                    <div class="card-content">
+                        <span class="card-title">Kilometers Converter</span>
+                        <p>
+                            <input type="number" id="inputMeter" placeholder="Kilometers" oninput="kilometerConverter(this.value)" onchange="kilometerConverter(this.value)">
+                        </p>
+                        <p>Feet: <span id="ktof"></span></p>
+                        <p>Meters: <span id="ktom"></span></p>
+                        <p>Inches: <span id="ktoi"></span></p>
+                        <p>Centimeters: <span id="ktoc"></span></p>
+                        <p>Miles: <span id="ktomi"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="card z-depth-5">
+                    <div class="card-content">
+                        <span class="card-title">Miles Converter</span>
+                        <p>
+                            <input type="number" id="inputMeter" placeholder="Miles" oninput="mileConverter(this.value)" onchange="mileConverter(this.value)">
+                        </p>
+                        <p>Feet: <span id="mitof"></span></p>
+                        <p>Meters: <span id="mitom"></span></p>
+                        <p>Inches: <span id="mitoi"></span></p>
+                        <p>Centimeters: <span id="mitoc"></span></p>
+                        <p>Kilometers: <span id="mitok"></span></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .card {
+            background-color: #df73ff;
+            color: #fff;
+        }
+        ::placeholder {
+            color: #000000;
+
+        }
+    </style>
+
+    <script src="app.js"></script>
+</body>
+</html>
